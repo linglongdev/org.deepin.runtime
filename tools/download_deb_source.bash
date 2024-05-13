@@ -5,7 +5,7 @@ set -e
 # 源码会下载到 linglong/sources/pkg_name
 
 url=http://pools.uniontech.com/desktop-professional
-distribution=eagle
+distribution=eagle/1070
 components="contrib main"
 
 mkdir -p linglong/sources || true

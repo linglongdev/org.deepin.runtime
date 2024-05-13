@@ -3,7 +3,7 @@ set -e
 # 这个脚本用于生成modules的sources列表
 
 url=http://pools.uniontech.com/desktop-professional
-distribution=eagle
+distribution=eagle/1070
 components="contrib main"
 
 tmpdir=$(mktemp -d)

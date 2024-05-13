@@ -5,7 +5,7 @@ set -e
 pkgs=$(cat /dev/stdin | sed "s#\[[^]]\+]##g" | sed "s# <\w\+># #g" | tr ',' '|')
 
 url=http://pools.uniontech.com/desktop-professional
-distribution=eagle
+distribution=eagle/1070
 components="main contrib"
 arch=$(dpkg --print-architecture)
 
