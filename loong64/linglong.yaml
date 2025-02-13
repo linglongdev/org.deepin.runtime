@@ -1,10 +1,10 @@
 version: "1"
 
 package:
-  id: org.deepin.runtime.dtk
+  id: org.deepin.runtime.dtk.webengine
   name: deepin runtime
   kind: runtime
-  version: 25.2.0.1739418618
+  version: 25.2.0.1739438680
   description: |
     Qt is a cross-platform C++ application framework. Qt's primary feature
     is its rich set of widgets that provide standard GUI functionality.
@@ -242,11 +242,11 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dconf/dconf-service_0.40.0-2_loong64.deb
     digest: b363f4660223cc03a32118194cb895f40bf489d20bbfe2cf165cf44fff0f9240
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6integration/dde-qt6integration_6.0.27_loong64.deb
-    digest: 1e2bc55a6602f309601ed7293c9a14234ef4d2923b040999f0639ca711fb5e36
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6integration/dde-qt6integration_6.0.29_loong64.deb
+    digest: 0b4b5348482125926a143b2e2878e74b8ba70bf2a4cc9050849ff157e99917e6
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.27_loong64.deb
-    digest: 260c4f607573f8631d8454dfbec4c0e9d91399560e1f796e1c915f95ab3d93b6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.29_loong64.deb
+    digest: 1cc00736804b1290cb746b3eca83cdace94f33000f919d474a18be476c5930a3
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/debconf/debconf_1.5.79-deepin_all.deb
     digest: ded6aaa7927ae27337ceb23d49391b4c7ec460a00ba692020e8f4e28388f345f
@@ -263,8 +263,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dpkg/dpkg_1.22.6deepin3_loong64.deb
     digest: eea7a8587865789ec9f40ae9c3e5310f82a5c8c295b27d65e91627c86c107951
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/dtk6-exhibition_6.0.27_loong64.deb
-    digest: c3e49d91ed70092ba87a0bedc6262ad48c877a6fbba43a271cdf2466ef3ba5b7
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/dtk6-exhibition_6.0.29_loong64.deb
+    digest: 9e91ce18f54d1c8f7c04f6dde899a312b3a0e61a957a45ec8c482935d473d557
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fcitx5-qt/fcitx5-frontend-qt6_5.1.8-2deepin1+rb1_loong64.deb
     digest: caaa962b2b8ec8c7f1e68b6ca6f348b454d9168557b9c2543dd54372d89e5bb0
@@ -305,8 +305,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fonts-urw-base35/fonts-urw-base35_20200910-7_all.deb
     digest: 4800c0b08fbeac0335f1e23df2d41528a242383324c256ebece00c8f438eefbd
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/gcc-12-base_12.3.0-17deepin10_loong64.deb
-    digest: eaa5e0834f88108eccfaeb981ba9ce30b6df0ad2d2c97f0e835f496f3646c044
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin4_loong64.deb
+    digest: 8603fe4ed1cd650d10366be27c0f5920c97379955c5a9d628af03d6146411422
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/glib2.0/gir1.2-glib-2.0_2.80.1-1deepin1_loong64.deb
     digest: 9adbd030273cfacb0eb6223bfdce65e0106f5c811d96caa66978598bb40f3309
@@ -530,29 +530,29 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libd/libdrm/libdrm2_2.4.123-1_loong64.deb
     digest: 9b28e3fcb6cff61e26352d3b426fe25b0c19961120d499fd5cb05f5177b411bd
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-bin_6.0.27_loong64.deb
-    digest: 87c4370b8d109962f253f6736d75f49e4fe118d97df65b29815dfcf9bace3be4
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-bin_6.0.29_loong64.deb
+    digest: 65a914b7ed43c92e6b69373853989bdf1238dce1a2eaf170134af5ea5ae66771
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-dev_6.0.27_loong64.deb
-    digest: 8da7158f04d0ec7b11ca9c43c536010655fba35f08066b3faff02578e06658e1
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-dev_6.0.29_loong64.deb
+    digest: 5aba8e1d0b9861b15cb454d2efdcafbf6a04c41e030839f3e15ae45c9d59009f
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core_6.0.27_loong64.deb
-    digest: ece74fb5d6ae104e195ea793c9091abe302898b3eebe7b799a5fbc32485bf7c9
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core_6.0.29_loong64.deb
+    digest: d762d576576b6c7fe621eb5c5b1a71350103e6ca5854683266183c65fb6976e3
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative-dev_6.0.27_loong64.deb
-    digest: b68cc659c9a3a40d9a7b8000c96c66da674a830af56d7d4cf127265a3cf1b272
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative-dev_6.0.29_loong64.deb
+    digest: a804b6723341d44c8cb0ce1c4f5e29338cc10615ba0c49ce630cd1fa7e9ddff2
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative_6.0.27_loong64.deb
-    digest: 028813064659b2117ec7fba22a560c600e5a4db86245d487c916c7f659a161ff
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative_6.0.29_loong64.deb
+    digest: 21b3cbcfb1c9cf7b10b10ff1c208b2f33acdc3c2e07036f05a6f4c492d156dcf
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-bin_6.0.27_loong64.deb
-    digest: 86a30e361af1e23c2558093f49366b3ea7238ff58ac3f0add95aee28a31c514a
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-bin_6.0.29_loong64.deb
+    digest: b90111db930df88e43f7ffa359eb18a3959c322c2cb306b05f9cdc42aea8f748
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-dev_6.0.27_loong64.deb
-    digest: b56468c783a3bcf5f47dcd80d94548cd307d9d655a5e3b7512765d4e5e24b1ae
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-dev_6.0.29_loong64.deb
+    digest: db7432b8d496c1ae3c742425e22524ad7bfd0561423af4995e60fd0f94413e9c
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui_6.0.27_loong64.deb
-    digest: 60d0b2f1de190c57154d243819b10f7ca1947d372c821be4de628db7280b7788
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui_6.0.29_loong64.deb
+    digest: e13eb835c9f56811db2841a126393447f4f4d55b453f4c0b738a4f38a3dead03
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6log/libdtk6log-dev_0.0.2_loong64.deb
     digest: faecf60fdd232fce51578eee0380bfebfccc84cf7c00ae3d41af9a43572f2c0d
@@ -560,20 +560,20 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6log/libdtk6log_0.0.2_loong64.deb
     digest: 9e03504ae093c9be1bec37e76dd97ef78bf4fe519320828ebb41096cebe47649
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-bin_6.0.27_loong64.deb
-    digest: b3041bdd7ce62d5ea6a0d9546bffa13f9331401676d0b194f40c65ec5313c007
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-bin_6.0.29_loong64.deb
+    digest: a61776a965235cd953c75fdefd2654059b9f605bd30512620d739cfb8fb7040c
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-dev_6.0.27_loong64.deb
-    digest: 5734dd29d4e85b217a0db81528e4978714aced2c98d7df243ad06af347eed809
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-dev_6.0.29_loong64.deb
+    digest: b6bbf1d692042bfcc78a1d6615b6e2f0c672e7d7d28d8fc3cdb80f6ff37ce355
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget_6.0.27_loong64.deb
-    digest: bc128bf7f7a6c9bc41174bb6fb6bad4a0641374e3d60aed1db1641a199c75c66
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget_6.0.29_loong64.deb
+    digest: aeae39e61bb48133d83712b194eed1b0186921f5e8c4dad8b5f9cc654226a6b4
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkcommon-dev_5.7.7_loong64.deb
-    digest: 4584fd21112dba40ee590af964270acbbf0ad972f0641132066a9b4ff0e740a5
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkcommon-dev_5.7.9_loong64.deb
+    digest: 0dcae6ca78fd2b49ad4a66ba9f41332179c763aba5e8a8eed46ebaf2660e3c19
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkdata_5.7.7_loong64.deb
-    digest: 65daaa54d35f2e0bfd19b0d6ce470deb49a0337da5137f0af02bfb8c4f19f601
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkdata_5.7.9_loong64.deb
+    digest: 34e8a5aabd8cbe9cbf0003b05dff44ee9160312a0f9ccfa4f50226a609a2909c
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libe/libedit/libedit2_3.1-20230828-1_loong64.deb
     digest: 851c5523af03e9dc081aa14afbeade7eeb1a21de5597226f13e0dcbed4a6ade7
@@ -659,8 +659,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mesa/libgbm1_24.3.0-1deepin1_loong64.deb
     digest: 10e0a5e6a07c0b34a622d1464bf739af4e4be459be5cb6b8589673d5ad887413
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libgcc-s1_12.3.0-17deepin10_loong64.deb
-    digest: 2ccbef22387b27cdea5863a190026fcde6335c98a2cfec0e5af8e88b6abd435f
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin4_loong64.deb
+    digest: 05d11e942b30ee6974be843ef2b8539426f3891c20bceb2e5bfc823e4c25b673
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libg/libgcrypt20/libgcrypt20_1.10.3-2_loong64.deb
     digest: 5bdd589218c3c04dd4c23f14e1815e007f56c84bd45cd497a1bf4e720bdbb6cb
@@ -728,8 +728,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gnutls28/libgnutls30_3.7.9-2_loong64.deb
     digest: 2b68ea50a264b00dfae6f6b003939b618eb9b4a206e8f3c4e5f6601428d7711a
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libgomp1_12.3.0-17deepin10_loong64.deb
-    digest: 920458c90cda45beb27aad1974b0c051c75858f36eb3b293987934f758485138
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libgomp1_13.2.0-3deepin4_loong64.deb
+    digest: a650bc16697eb1e90218fc6c2b5f6b3b4207c81dd511a07729333ab0410f9d00
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libg/libgpg-error/libgpg-error0_1.47-3_loong64.deb
     digest: 432b4819ad1edb46e6d8116596212dbc3a82d0d34c93c3574ded8db352188c8c
@@ -1262,14 +1262,14 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libs/libssh/libssh-gcrypt-4_0.10.6-2_loong64.deb
     digest: 55cc8ef205639767d2c5162b6424297d7866b3d77be3ec600b70ddf3345cd6d9
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/o/openssl/libssl3_3.2.0-2deepin2_loong64.deb
-    digest: 6c401bd2a8b58f0d6cbeed6121446336cee004f1a03701025112e090410c20d8
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/o/openssl/libssl3_3.2.4-0deepin1_loong64.deb
+    digest: 50a0de1226846d5adabf640c91d6fcd777d1feba9fd67e7c1cccf6013b62d0b8
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/startup-notification/libstartup-notification0_0.12-deepin1_loong64.deb
     digest: d5528cf8ef1dcf19b1b3245d894851bbddc35132ef3fd22e8c399fd5af91a514
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libstdc++6_12.3.0-17deepin10_loong64.deb
-    digest: e0a3727760be5896565df26bd4abf9a506b51f84d593fbeccf3dd4845f1b7ac5
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libstdc++6_13.2.0-3deepin4_loong64.deb
+    digest: 35e491e460731f9dd6e054429c576a0cef5fca817c034943b0463e6cf8503db3
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/svt-av1/libsvtav1enc1d1_1.7.0+dfsg-2_loong64.deb
     digest: d402b79e3fbfa42586f89b0b86c376772ec033ff6252032e0ea7edb831a9bf2d
@@ -1727,8 +1727,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtqml_6.8.0+dfsg-0deepin3_loong64.deb
     digest: 5bebc32a419c38803377c01265c89450b74b82ab8098a71593f9292962919432
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/qml6-module-qtquick-controls2-styles-chameleon_6.0.27_loong64.deb
-    digest: ccf413250a6238a81100faf17475f96b9c8810bd6adc4aeaffc848303cfc9713
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/qml6-module-qtquick-controls2-styles-chameleon_6.0.29_loong64.deb
+    digest: dcb785dfb1ece1d86f9bbd3cbe72784d99477c646a55daccb90a335ada9bd256
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtquick-controls_6.8.0+dfsg-0deepin3_loong64.deb
     digest: ad66e90894973d878b512046d6312c4ae337b27f839b664f1f2f6e5c6e776cd7

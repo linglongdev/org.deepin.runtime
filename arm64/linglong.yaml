@@ -1,10 +1,10 @@
 version: "1"
 
 package:
-  id: org.deepin.runtime.dtk
+  id: org.deepin.runtime.dtk.webengine
   name: deepin runtime
   kind: runtime
-  version: 25.2.0.1739418618
+  version: 25.2.0.1739438680
   description: |
     Qt is a cross-platform C++ application framework. Qt's primary feature
     is its rich set of widgets that provide standard GUI functionality.
@@ -242,11 +242,11 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dconf/dconf-service_0.40.0-2_arm64.deb
     digest: 3519e252c6decf5d942303ec032d0c56e23fd4eaf83ab2806af343d205445f5f
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6integration/dde-qt6integration_6.0.27_arm64.deb
-    digest: 839b3bbc508e98253d4a6a48e9e60686beae86bc78f4b50679b9925d27b49462
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6integration/dde-qt6integration_6.0.29_arm64.deb
+    digest: 3cc1fbbafd688bf0ccc5bb4ce666c1f6c2b8df225a6755c4b4947ad68c9de254
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.27_arm64.deb
-    digest: 5ab2545c8ab4c6add5c10e578de245570239cc15262c963c883f3c0a16626ee7
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.29_arm64.deb
+    digest: 3700c476d007e319ca482ba15cef4701f5cd0c9e05b8d897d446e707c3462b9d
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/debconf/debconf_1.5.79-deepin_all.deb
     digest: ded6aaa7927ae27337ceb23d49391b4c7ec460a00ba692020e8f4e28388f345f
@@ -263,8 +263,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dpkg/dpkg_1.22.6deepin3_arm64.deb
     digest: 81d1a53d75115f01e303fcf8337493bc2850614b0a2e30b06b9e0fa67d0d5a80
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/dtk6-exhibition_6.0.27_arm64.deb
-    digest: cbeb69623692d0f085d6da3900b390efba6138ad771701e71ff86990eaa7121f
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/dtk6-exhibition_6.0.29_arm64.deb
+    digest: 375f5f7210545073d3e028a24ed3804eac33addbe5abdc5bb6371d38b3d6199e
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fcitx5-qt/fcitx5-frontend-qt6_5.1.8-2deepin1+rb1_arm64.deb
     digest: f758b4640738de01ce3a869cda2b038f57f30d611a63c1402707be8a612dfedf
@@ -305,8 +305,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fonts-urw-base35/fonts-urw-base35_20200910-7_all.deb
     digest: 4800c0b08fbeac0335f1e23df2d41528a242383324c256ebece00c8f438eefbd
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/gcc-12-base_12.3.0-17deepin10_arm64.deb
-    digest: 243914e3566790b771084eaa1024527b4249bf1d7ced29651fee7f17b64b1424
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin4_arm64.deb
+    digest: 781c11f578b76d0702466e2ecd81225460d64e1d70cd5f849159b84603028dff
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/glib2.0/gir1.2-glib-2.0_2.80.1-1deepin1_arm64.deb
     digest: 44c091f38ef3e76d0b4d249b584a05e88b8e24a754834ba0bcde925734229ce3
@@ -530,29 +530,29 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libd/libdrm/libdrm2_2.4.123-1_arm64.deb
     digest: 6c900feb79b1e5f847a5b9f53c6bda3f6aa12a9abfcf106f872a3812ef78bbc4
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-bin_6.0.27_arm64.deb
-    digest: 17d833b021866a03d9cdb984615444db8bea7b4b2a0fe3ac261c6705a66314c6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-bin_6.0.29_arm64.deb
+    digest: bc32b6372eae7323e4b64253c2fd2d9448d63019a32920748f6eb272892ad382
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-dev_6.0.27_arm64.deb
-    digest: 43ee867f373486190fd9380f9b8d9aa85ac0e963249ac5cfda70519fa3f745d2
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-dev_6.0.29_arm64.deb
+    digest: 77f5dee749f1e7955dea95fc487386dac51f9847c2fee14df006d5ff058b7aee
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core_6.0.27_arm64.deb
-    digest: af88be66228f9ee865361820b0fddc1018c00ae0315e9fdbc2ad306c64a5ec3a
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core_6.0.29_arm64.deb
+    digest: 18e09752cf4ba9f7f43b911028cb0b5c6a8294fc1b5421da318fa948a23e82d0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative-dev_6.0.27_arm64.deb
-    digest: 0fccb4e1add4c5f5976e08f4d1e661824c4f10acf4c435c509900482f7291b64
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative-dev_6.0.29_arm64.deb
+    digest: 55b2ceae1379e82b44e1e4d8588d591fb93d5ab5f3e90406ac2a1fecd3153e54
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative_6.0.27_arm64.deb
-    digest: c8c6117d354d089d266e77393eb5dbf00903b98790374ec7d46cb37cf80d8fe6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative_6.0.29_arm64.deb
+    digest: 428c113bf10a8b39408c3834abe387f114e45e6bc83ca4e79b66352d0231264f
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-bin_6.0.27_arm64.deb
-    digest: 83940080b355fac7bf2c831100d3f4405eaf5dd6d7266b3a0abf8a9a94d78057
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-bin_6.0.29_arm64.deb
+    digest: b5e5f70fc7f8152b61c8aa3c865ccc6725296116e2ba01bb1b687ed057874e28
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-dev_6.0.27_arm64.deb
-    digest: 6b0e163231ba636d5f67eaf77d122162d8f82d13ea3ed054392ba83fe1769377
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-dev_6.0.29_arm64.deb
+    digest: 223410c6c626e2e33f90a628108767ed1a0a1b52d623c03a1c415511f3302604
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui_6.0.27_arm64.deb
-    digest: 7b4854747ba4bf50066e61139ac98eaf30c903deab2f5626264ba510c98eadbd
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui_6.0.29_arm64.deb
+    digest: cb34b440aa67a9476150afb1452a5b08bfee72a7eaf115e0de34ee913432d5e9
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6log/libdtk6log-dev_0.0.2_arm64.deb
     digest: 0e714a576b19f5a920d224ef1a1877e93c4b8aea1e49eba99df7316c72319910
@@ -560,20 +560,20 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6log/libdtk6log_0.0.2_arm64.deb
     digest: 67e687906a183922d6e510666f7637c45946e68f61bc4f0ce7fc2a840aaff3e0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-bin_6.0.27_arm64.deb
-    digest: 3ccc8be4b35bab41242eb181c1dac6198fe2a8d559255bbb4cce33c76a339e77
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-bin_6.0.29_arm64.deb
+    digest: d81adb97f919b3d0da7136fd18cd3cb3d7124c22867e45ece5e3e96b663fbdf6
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-dev_6.0.27_arm64.deb
-    digest: 2f63737c9c7a71861c8f0ce959c6922e1f8f8715b823c3f169d557f47b3f9cb6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-dev_6.0.29_arm64.deb
+    digest: b408e3a489240d24e0ae01db0d5e676836f1079a30ab0157f56eae45e01f702e
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget_6.0.27_arm64.deb
-    digest: a8b377613d01677583063f95f97057d64239464ba30d5a697b29ed83a73d7372
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget_6.0.29_arm64.deb
+    digest: aca85a4792640c434775c9d23fa975c7961f57c609eacc0b95f4856007a61408
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkcommon-dev_5.7.7_arm64.deb
-    digest: 38096f35c61fae6f9aba0c25954a8bfbca29df52ed6ca602b525a714a00f1494
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkcommon-dev_5.7.9_arm64.deb
+    digest: 9228e408fc7bd0ba5facb59e6144b837aa991a38fc2f8dcf7464265c1398583a
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkdata_5.7.7_arm64.deb
-    digest: f8d9893fb4c06cb6622016f2672d6de69ddebe58cda4a468d9d42083e0065066
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkdata_5.7.9_arm64.deb
+    digest: 3599ea894d347be8031fc5bda86750ca86d9c6d4ede8812bbd7b225ef7499e32
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/e/elfutils/libdw1_0.191-1deepin2_arm64.deb
     digest: 9507c8c6c5084962857336fe972dc2b4de79cfcf36bad3065d124dd992f17942
@@ -662,8 +662,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mesa/libgbm1_24.3.0-1deepin1_arm64.deb
     digest: 0e6e5eb75926984f164fc7cab721af768f3e39a02e0fef08a80ca511e0932216
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libgcc-s1_12.3.0-17deepin10_arm64.deb
-    digest: 36157f1f83c16dc6ddb5cbbf93e3a0d4ab9d0ecf4ed078de65ce2d736e5dd731
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin4_arm64.deb
+    digest: 6ed2090f5c442f6dbccfc825cf0303e42954ee2db527d4605435c09862a43d57
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libg/libgcrypt20/libgcrypt20_1.10.3-2_arm64.deb
     digest: 86a50d1b85ed82764e7f356b2e3e5543149cc778edca29dae9765ddbc3789d9a
@@ -731,8 +731,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gnutls28/libgnutls30_3.7.9-2_arm64.deb
     digest: 88703de5a0a7bc5c03730e2de61ae40894fa6f4d6d1f89def93ec44055c6771d
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libgomp1_12.3.0-17deepin10_arm64.deb
-    digest: a17c456fc597acf429f300dc14565568ba9d3e6fa76b137dd0f3551e490cd20c
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libgomp1_13.2.0-3deepin4_arm64.deb
+    digest: 5f619ecbd600ec16a9b65db818e1687594141a86fc843f971f4106ef3d12343d
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libg/libgpg-error/libgpg-error0_1.47-3_arm64.deb
     digest: e67f481218dd4fc506bb97ebccacbbd39e5420caca6c71ba011b1efcc0f1f5a0
@@ -1271,14 +1271,14 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libs/libssh/libssh-gcrypt-4_0.10.6-2_arm64.deb
     digest: 830239bef63460fabeb07413177ff1377da7b67edb62fb4710ee06c764f232c0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/o/openssl/libssl3_3.2.0-2deepin2_arm64.deb
-    digest: f7644a7984de1e0c7d867c5794537d7df6f0ee634850ed607a3098d3368cc163
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/o/openssl/libssl3_3.2.4-0deepin1_arm64.deb
+    digest: 91551d3d67e2ad04bc982b19c3c9b69da43bbd1ce0cceacbc98a3bbfe6e268e0
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/startup-notification/libstartup-notification0_0.12-deepin1_arm64.deb
     digest: 6afa3a2ae947564d05b220d89298c7e6e1f875cb05b4ed1a9a450be99a3ba47d
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libstdc++6_12.3.0-17deepin10_arm64.deb
-    digest: 8494dbbb90f1fdb03c733412dea5e1bade8a6b59b53842f6a3d8c669dd759d78
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libstdc++6_13.2.0-3deepin4_arm64.deb
+    digest: a4c67085eb06e81f133feb7cd9309cb5582edcc256cbfe3a2a534f37d1a09da5
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/svt-av1/libsvtav1enc1d1_1.7.0+dfsg-2_arm64.deb
     digest: cc104e0d2a339b388906430c5ddde52273cf42871c3d5a1c488732d17647e782
@@ -1739,8 +1739,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtqml_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 96f2f1d1953e3a48542911d7d13f179fc9e7766a462f5941a995f56455c9fc63
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/qml6-module-qtquick-controls2-styles-chameleon_6.0.27_arm64.deb
-    digest: c2f5542c56e91b96477a00bf9ffa284c859632e0df1290e59275d5b31266c87b
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/qml6-module-qtquick-controls2-styles-chameleon_6.0.29_arm64.deb
+    digest: 5e64535a93605a94b79f65337a729df0f2130eaf0acb84d20b4f1f3ab9b8f769
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtquick-controls_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 6ebce1670e7a4ac7a1a854e8d874cc6a52a1ff5fe2240e692ebbc0640ac94b5a
