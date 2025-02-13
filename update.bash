@@ -1,48 +1,67 @@
 #!/bin/bash
-poolURL=http://10.20.64.92:8080/testing_full_20241113/pool
+set -e
+poolURL=http://10.20.64.92:8080/testing25_daily/pool
 codename=main
 sources=(
-    qtbase-opensource-src
-    qtsvg-opensource-src
-    qtdeclarative-opensource-src
-    qtgraphicaleffects-opensource-src
-    qtquickcontrols-opensource-src
-    qtquickcontrols2-opensource-src
-    qtimageformats-opensource-src
-    qtmultimedia-opensource-src
-    qtspeech-opensource-src
-    qttools-opensource-src
-    qtx11extras-opensource-src
-    qtwayland-opensource-src
-    qttranslations-opensource-src
+    qt6-base
+    qt6-svg
+    qt6-declarative
+    qt6-imageformats
+    qt6-multimedia
+    qt6-speech
+    qt6-tools
+    qt6-wayland
+    qt6-translations
+    qt6-5compat
+    qt6-webengine
+    qt6-webchannel
 )
 sources+=(
-    dtkcommon
-    dtkcore
-    dtkcore
-    dtkdeclarative
-    dtkgui
-    dtkwidget
-    qt5integration
-    qt5platform-plugins
-    dde-qt5platform-plugins
+    dtk6core
+    dtk6declarative
+    dtk6gui
+    dtk6widget
+    dtk6log
+    dde-qt6platform-plugins
+    qt6integration
+    fcitx5-qt
 )
 
-cat linglong.yaml | grep -B 1000 'linglong:gen_deb_source sources' >linglong.yaml.bk
-cat arm64/linglong.yaml | grep -B 1000 'linglong:gen_deb_source sources' >arm64/linglong.yaml.bk
-cat loong64/linglong.yaml | grep -B 1000 'linglong:gen_deb_source sources' >loong64/linglong.yaml.bk
+# 兼容旧版本runtime
+sources+=(
+    icu
+    xcb-util
+    libpciaccess
+)
 
+# 解决功能问题
+sources+=(
+    # 解决 ctrl+shift+? 快捷键对话框
+    # deepin-shortcut-viewer
+)
+rm install.list.tmp || true
 for src in "${sources[@]}"; do
     echo "Source $src" >&2
-    out=$(curl -q "$poolURL/$codename/${src:0:1}/$src/" 2>/dev/null | grep deb | awk -F'_' '{print $1}' | awk -F'"' '{print $2}' | uniq)
-    for pkg in $(echo "$out" | grep -v '\-examples-dbgsym$' | grep -v '\-doc$' | grep -v '\-examples$' | grep -v '\-doc\-'); do
-        echo "Binary $pkg" >&2
-        echo "  # linglong:gen_deb_source install $pkg" >>linglong.yaml.bk
-        echo "  # linglong:gen_deb_source install $pkg" >>arm64/linglong.yaml.bk
-        echo "  # linglong:gen_deb_source install $pkg" >>loong64/linglong.yaml.bk
+    dir=${src:0:1}
+    if [[ $src == lib* ]]; then
+        dir=${src:0:4}
+    fi
+    out=$(curl -q -f "$poolURL/$codename/$dir/$src/" 2>/dev/null | grep deb | awk -F'_' '{print $1}' | awk -F'"' '{print $2}' | uniq)
+    echo "  # source package $src" >>install.list.tmp
+    for pkg in $(echo "$out" | grep -v 'dbgsym$' | grep -v '\-doc$' | grep -v '\-examples$' | grep -v '\-doc\-'); do
+        echo "  Binary $pkg" >&2
+        echo "  # linglong:gen_deb_source install $pkg" >>install.list.tmp
     done
 done
 
-mv linglong.yaml.bk linglong.yaml
-mv arm64/linglong.yaml.bk arm64/linglong.yaml
-mv loong64/linglong.yaml.bk loong64/linglong.yaml
+sed -i '/libfcitx5-qt1/d' install.list.tmp
+sed -i '/libfcitx5-qt-dev/d' install.list.tmp
+sed -i '/fcitx5-frontend-qt5/d' install.list.tmp
+
+for file in linglong.yaml arm64/linglong.yaml loong64/linglong.yaml sw64/linglong.yaml; do
+    grep -B 1000 'linglong:gen_deb_source sources' $file >$file.bk
+    cat install.list.tmp >>$file.bk
+    mv $file.bk $file
+done
+
+rm install.list.tmp
