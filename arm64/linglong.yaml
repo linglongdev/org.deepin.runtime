@@ -1,10 +1,10 @@
 version: "1"
 
 package:
-  id: org.deepin.runtime.dtk
+  id: org.deepin.runtime.webengine
   name: deepin runtime
   kind: runtime
-  version: 25.2.0.1739418618
+  version: 25.2.0.1739866918
   description: |
     Qt is a cross-platform C++ application framework. Qt's primary feature
     is its rich set of widgets that provide standard GUI functionality.
@@ -142,6 +142,28 @@ sources:
   # linglong:gen_deb_source install libqt6core5compat6
   # linglong:gen_deb_source install qml6-module-qt5compat-graphicaleffects
   # linglong:gen_deb_source install qt6-5compat-dev
+  # source package qt6-webengine
+  # linglong:gen_deb_source install libqt6pdf6
+  # linglong:gen_deb_source install libqt6pdfquick6
+  # linglong:gen_deb_source install libqt6pdfwidgets6
+  # linglong:gen_deb_source install libqt6webengine6-data
+  # linglong:gen_deb_source install libqt6webenginecore6-bin
+  # linglong:gen_deb_source install libqt6webenginecore6
+  # linglong:gen_deb_source install libqt6webenginequick6
+  # linglong:gen_deb_source install libqt6webenginewidgets6
+  # linglong:gen_deb_source install qml6-module-qtquick-pdf
+  # linglong:gen_deb_source install qml6-module-qtwebengine-controlsdelegates
+  # linglong:gen_deb_source install qml6-module-qtwebengine
+  # linglong:gen_deb_source install qt6-image-formats-plugin-pdf
+  # linglong:gen_deb_source install qt6-pdf-dev
+  # linglong:gen_deb_source install qt6-webengine-dev-tools
+  # linglong:gen_deb_source install qt6-webengine-dev
+  # linglong:gen_deb_source install qt6-webengine-private-dev
+  # source package qt6-webchannel
+  # linglong:gen_deb_source install libqt6webchannel6
+  # linglong:gen_deb_source install libqt6webchannelquick6
+  # linglong:gen_deb_source install qml6-module-qtwebchannel
+  # linglong:gen_deb_source install qt6-webchannel-dev
   # source package dtk6core
   # linglong:gen_deb_source install libdtk6core-bin
   # linglong:gen_deb_source install libdtk6core-dev
@@ -196,6 +218,9 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/a/at-spi2-core/at-spi2-common_2.50.0-1_all.deb
     digest: 5289ad162167a611940e8f169ce6a1e6974bbe14f77a66ee890c137196fc654a
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/b/base-passwd/base-passwd_3.6.5_arm64.deb
+    digest: fc3551dd413c3fb27e04f06566e154bc3ba71080f46719bf838bbd12aa586c10
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/b/binutils/binutils-aarch64-linux-gnu_2.41-6deepin7_arm64.deb
     digest: 6d594af95ee6ae34a14f687a619b97684e7e136ec2551a36157a456f1b718577
   - kind: file
@@ -232,11 +257,11 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dconf/dconf-service_0.40.0-2_arm64.deb
     digest: 3519e252c6decf5d942303ec032d0c56e23fd4eaf83ab2806af343d205445f5f
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6integration/dde-qt6integration_6.0.27_arm64.deb
-    digest: 839b3bbc508e98253d4a6a48e9e60686beae86bc78f4b50679b9925d27b49462
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6integration/dde-qt6integration_6.0.29_arm64.deb
+    digest: 3cc1fbbafd688bf0ccc5bb4ce666c1f6c2b8df225a6755c4b4947ad68c9de254
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.27_arm64.deb
-    digest: 5ab2545c8ab4c6add5c10e578de245570239cc15262c963c883f3c0a16626ee7
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dde-qt6platform-plugins/dde-qt6xcb-plugin_6.0.29_arm64.deb
+    digest: 3700c476d007e319ca482ba15cef4701f5cd0c9e05b8d897d446e707c3462b9d
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/debconf/debconf_1.5.79-deepin_all.deb
     digest: ded6aaa7927ae27337ceb23d49391b4c7ec460a00ba692020e8f4e28388f345f
@@ -253,8 +278,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dpkg/dpkg_1.22.6deepin3_arm64.deb
     digest: 81d1a53d75115f01e303fcf8337493bc2850614b0a2e30b06b9e0fa67d0d5a80
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/dtk6-exhibition_6.0.27_arm64.deb
-    digest: cbeb69623692d0f085d6da3900b390efba6138ad771701e71ff86990eaa7121f
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/dtk6-exhibition_6.0.29_arm64.deb
+    digest: 375f5f7210545073d3e028a24ed3804eac33addbe5abdc5bb6371d38b3d6199e
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fcitx5-qt/fcitx5-frontend-qt6_5.1.8-2deepin1+rb1_arm64.deb
     digest: f758b4640738de01ce3a869cda2b038f57f30d611a63c1402707be8a612dfedf
@@ -295,8 +320,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fonts-urw-base35/fonts-urw-base35_20200910-7_all.deb
     digest: 4800c0b08fbeac0335f1e23df2d41528a242383324c256ebece00c8f438eefbd
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/gcc-12-base_12.3.0-17deepin10_arm64.deb
-    digest: 243914e3566790b771084eaa1024527b4249bf1d7ced29651fee7f17b64b1424
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/gcc-13-base_13.2.0-3deepin4_arm64.deb
+    digest: 781c11f578b76d0702466e2ecd81225460d64e1d70cd5f849159b84603028dff
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/glib2.0/gir1.2-glib-2.0_2.80.1-1deepin1_arm64.deb
     digest: 44c091f38ef3e76d0b4d249b584a05e88b8e24a754834ba0bcde925734229ce3
@@ -346,6 +371,9 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/a/at-spi2-core/libatspi2.0-0_2.50.0-1_arm64.deb
     digest: 26446baef54afcb3b4693e218a74c70c480cc50bec4f61dcc24535424c3128d7
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/a/attr/libattr1_2.5.1-1_arm64.deb
+    digest: 2eb5cf5a1240dd06a37f8a529d5982be1426bf44d38543746d1bbe44f7ada2e8
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/a/audit/libaudit-common_3.1.2-2_all.deb
     digest: 5fcb4f437655bbe179c280be56fdc879d317f6ea6f3a6b865c9fa01a314fc8ca
   - kind: file
@@ -376,11 +404,11 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/b/binutils/libbinutils_2.41-6deepin7_arm64.deb
     digest: f3a6cc55f4f51a453f361aa91f3da7497d15c27001d779937952f2aea946393d
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libblkid-dev_2.39.3-6deepin1_arm64.deb
-    digest: a86d6e3229a0af4e39de917b5c49ab2b228ddf5dccd6e841a8944d19e62495b1
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libblkid-dev_2.40.4-3deepin3_arm64.deb
+    digest: 25d30b385b80b1b9e62adbf39528c0209c9ab35ad55a071efde1c4dd4d4264e0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libblkid1_2.39.3-6deepin1_arm64.deb
-    digest: 9956f16990e98ff4a62e1730feec46eb2d57e4da93b9c138514423f593f272ae
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libblkid1_2.40.4-3deepin3_arm64.deb
+    digest: fc30a62923533d0aa445161290f79dbc25c93085e4d26a7cab2ad9d3e1eabd41
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libb/libbluray/libbluray2_1.3.4-1+rb2_arm64.deb
     digest: 321b50e4ee0efc4aaa9e67168e4b88216733e1c012d269e6e9f2c04941a66ec0
@@ -493,6 +521,9 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dconf/libdconf1_0.40.0-2_arm64.deb
     digest: 57f0d64bf483877f4c8e4bec0eaec73227d30795dba37aa6ce726b6816c0abef
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/c/cdebconf/libdebconfclient0_0.271_arm64.deb
+    digest: 1d9347b2ceba10b302d2c571bfbda6567f159d546a14e99e300a07c2dbe1fb94
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libd/libdeflate/libdeflate-dev_1.18-1_arm64.deb
     digest: d5e52d889f15c80ffe7214c06605d831488c2650ec00d7c9eb9b50ebbc108133
   - kind: file
@@ -520,29 +551,29 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libd/libdrm/libdrm2_2.4.123-1_arm64.deb
     digest: 6c900feb79b1e5f847a5b9f53c6bda3f6aa12a9abfcf106f872a3812ef78bbc4
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-bin_6.0.27_arm64.deb
-    digest: 17d833b021866a03d9cdb984615444db8bea7b4b2a0fe3ac261c6705a66314c6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-bin_6.0.29_arm64.deb
+    digest: bc32b6372eae7323e4b64253c2fd2d9448d63019a32920748f6eb272892ad382
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-dev_6.0.27_arm64.deb
-    digest: 43ee867f373486190fd9380f9b8d9aa85ac0e963249ac5cfda70519fa3f745d2
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core-dev_6.0.29_arm64.deb
+    digest: 77f5dee749f1e7955dea95fc487386dac51f9847c2fee14df006d5ff058b7aee
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core_6.0.27_arm64.deb
-    digest: af88be66228f9ee865361820b0fddc1018c00ae0315e9fdbc2ad306c64a5ec3a
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6core/libdtk6core_6.0.29_arm64.deb
+    digest: 18e09752cf4ba9f7f43b911028cb0b5c6a8294fc1b5421da318fa948a23e82d0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative-dev_6.0.27_arm64.deb
-    digest: 0fccb4e1add4c5f5976e08f4d1e661824c4f10acf4c435c509900482f7291b64
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative-dev_6.0.29_arm64.deb
+    digest: 55b2ceae1379e82b44e1e4d8588d591fb93d5ab5f3e90406ac2a1fecd3153e54
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative_6.0.27_arm64.deb
-    digest: c8c6117d354d089d266e77393eb5dbf00903b98790374ec7d46cb37cf80d8fe6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/libdtk6declarative_6.0.29_arm64.deb
+    digest: 428c113bf10a8b39408c3834abe387f114e45e6bc83ca4e79b66352d0231264f
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-bin_6.0.27_arm64.deb
-    digest: 83940080b355fac7bf2c831100d3f4405eaf5dd6d7266b3a0abf8a9a94d78057
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-bin_6.0.29_arm64.deb
+    digest: b5e5f70fc7f8152b61c8aa3c865ccc6725296116e2ba01bb1b687ed057874e28
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-dev_6.0.27_arm64.deb
-    digest: 6b0e163231ba636d5f67eaf77d122162d8f82d13ea3ed054392ba83fe1769377
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui-dev_6.0.29_arm64.deb
+    digest: 223410c6c626e2e33f90a628108767ed1a0a1b52d623c03a1c415511f3302604
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui_6.0.27_arm64.deb
-    digest: 7b4854747ba4bf50066e61139ac98eaf30c903deab2f5626264ba510c98eadbd
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6gui/libdtk6gui_6.0.29_arm64.deb
+    digest: cb34b440aa67a9476150afb1452a5b08bfee72a7eaf115e0de34ee913432d5e9
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6log/libdtk6log-dev_0.0.2_arm64.deb
     digest: 0e714a576b19f5a920d224ef1a1877e93c4b8aea1e49eba99df7316c72319910
@@ -550,20 +581,20 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6log/libdtk6log_0.0.2_arm64.deb
     digest: 67e687906a183922d6e510666f7637c45946e68f61bc4f0ce7fc2a840aaff3e0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-bin_6.0.27_arm64.deb
-    digest: 3ccc8be4b35bab41242eb181c1dac6198fe2a8d559255bbb4cce33c76a339e77
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-bin_6.0.29_arm64.deb
+    digest: d81adb97f919b3d0da7136fd18cd3cb3d7124c22867e45ece5e3e96b663fbdf6
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-dev_6.0.27_arm64.deb
-    digest: 2f63737c9c7a71861c8f0ce959c6922e1f8f8715b823c3f169d557f47b3f9cb6
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget-dev_6.0.29_arm64.deb
+    digest: b408e3a489240d24e0ae01db0d5e676836f1079a30ab0157f56eae45e01f702e
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget_6.0.27_arm64.deb
-    digest: a8b377613d01677583063f95f97057d64239464ba30d5a697b29ed83a73d7372
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6widget/libdtk6widget_6.0.29_arm64.deb
+    digest: aca85a4792640c434775c9d23fa975c7961f57c609eacc0b95f4856007a61408
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkcommon-dev_5.7.7_arm64.deb
-    digest: 38096f35c61fae6f9aba0c25954a8bfbca29df52ed6ca602b525a714a00f1494
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkcommon-dev_5.7.9_arm64.deb
+    digest: 9228e408fc7bd0ba5facb59e6144b837aa991a38fc2f8dcf7464265c1398583a
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkdata_5.7.7_arm64.deb
-    digest: f8d9893fb4c06cb6622016f2672d6de69ddebe58cda4a468d9d42083e0065066
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtkcommon/libdtkdata_5.7.9_arm64.deb
+    digest: 3599ea894d347be8031fc5bda86750ca86d9c6d4ede8812bbd7b225ef7499e32
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/e/elfutils/libdw1_0.191-1deepin2_arm64.deb
     digest: 9507c8c6c5084962857336fe972dc2b4de79cfcf36bad3065d124dd992f17942
@@ -589,6 +620,9 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libe/libevdev/libevdev2_1.12.0+dfsg-1_arm64.deb
     digest: fbbe2a51d531e25bc6bd01b2a732ea480411f065940a2b581d47dcd98ec7fcc3
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/libe/libevent/libevent-2.1-7_2.1.12-stable-8deepin1_arm64.deb
+    digest: 9d243c0009c3d94146bef267d3b239718b5897cbc6cf3761701246ce32e5b9aa
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/e/expat/libexpat1-dev_2.5.0-2_arm64.deb
     digest: 06c39c3e78aba8616d2c7b43d7cc33cd60bcbfb7bc362e997b2bce1b24fd7460
   - kind: file
@@ -610,8 +644,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/f/fcitx5/libfcitx5utils2_5.1.11-2deepin3_arm64.deb
     digest: 8584fd10f7bc01d9567ecc7eaec98b1843a1cda58fbf2f437b12b6d8574866b1
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libfdisk1_2.39.3-6deepin1_arm64.deb
-    digest: a835a38111345a0ad891fe5f438f6d428789f30562a20592866054aa54b18ea1
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libfdisk1_2.40.4-3deepin3_arm64.deb
+    digest: fcf64b2a288dbd7cd717eb9caa9d209a489aa0e21046aeadb2d136977724103e
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libf/libffi/libffi-dev_3.4.6-1_arm64.deb
     digest: 44b6f1a9aceead0cac121cfd13cdd9a529eb2b60522f8482c7dc4f67432d1904
@@ -652,8 +686,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mesa/libgbm1_24.3.0-1deepin1_arm64.deb
     digest: 0e6e5eb75926984f164fc7cab721af768f3e39a02e0fef08a80ca511e0932216
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libgcc-s1_12.3.0-17deepin10_arm64.deb
-    digest: 36157f1f83c16dc6ddb5cbbf93e3a0d4ab9d0ecf4ed078de65ce2d736e5dd731
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libgcc-s1_13.2.0-3deepin4_arm64.deb
+    digest: 6ed2090f5c442f6dbccfc825cf0303e42954ee2db527d4605435c09862a43d57
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libg/libgcrypt20/libgcrypt20_1.10.3-2_arm64.deb
     digest: 86a50d1b85ed82764e7f356b2e3e5543149cc778edca29dae9765ddbc3789d9a
@@ -721,8 +755,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gnutls28/libgnutls30_3.7.9-2_arm64.deb
     digest: 88703de5a0a7bc5c03730e2de61ae40894fa6f4d6d1f89def93ec44055c6771d
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libgomp1_12.3.0-17deepin10_arm64.deb
-    digest: a17c456fc597acf429f300dc14565568ba9d3e6fa76b137dd0f3551e490cd20c
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libgomp1_13.2.0-3deepin4_arm64.deb
+    digest: 5f619ecbd600ec16a9b65db818e1687594141a86fc843f971f4106ef3d12343d
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libg/libgpg-error/libgpg-error0_1.47-3_arm64.deb
     digest: e67f481218dd4fc506bb97ebccacbbd39e5420caca6c71ba011b1efcc0f1f5a0
@@ -762,6 +796,9 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gumbo-parser/libgumbo2_0.12.0+dfsg-2_arm64.deb
     digest: 1af178c5a43fc3f1a40d90a4890bf8a00372449495bc32e6ddd82165927b3591
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/h/harfbuzz/libharfbuzz-subset0_8.0.1-1+rb1_arm64.deb
+    digest: d1b6f0d1fd80cd4e25d4d7ebb3c2152bee13778680a3963afa6a45139658be84
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/h/harfbuzz/libharfbuzz0b_8.0.1-1+rb1_arm64.deb
     digest: b50ec89e04006c13764afac632d9fd4793c187d20fc54670018f76241fbe8495
@@ -880,14 +917,17 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/md4c/libmd4c0_0.4.8-1_arm64.deb
     digest: 8b58cf124cb0a435765f6cbc7bc8a59d431a8f84babbc2956beb1a46b53b99f5
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/z/zlib/libminizip1_1.3.dfsg+really1.3.1-1deepin1_arm64.deb
+    digest: 5dd056d23e1f33662c6c5edbe0c12812433a301914bdf1818d5b169005beca50
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libm/libmng/libmng1_1.0.10+dfsg-3.1-deepin1_arm64.deb
     digest: 15763cf880b4073ba036e05f2a3b9b46aa43802f9d2c49848fd315a9229d9be8
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libmount-dev_2.39.3-6deepin1_arm64.deb
-    digest: e04e69e0e1079164c9625eeee3c2153f7a642c4dcc270c0e9a0aa359e3127d09
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libmount-dev_2.40.4-3deepin3_arm64.deb
+    digest: 144f52c28a6d1d379a87413988586b9570a7de5a3ee780377e5ccc02f1d671b7
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libmount1_2.39.3-6deepin1_arm64.deb
-    digest: 34cacc70e4fb7db8f0fef17546f574e900975b0b6136ffdc8b79e0840ba9009d
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libmount1_2.40.4-3deepin3_arm64.deb
+    digest: e6955743fd652581c76db11ec14490be887549666f150765f50a66e0a8e43075
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/l/lame/libmp3lame0_3.100-6_arm64.deb
     digest: 3362ecfa4b431c335a8833e3c5014f24ea43d6f1f398831c48fa03c2234f7059
@@ -915,6 +955,12 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libn/libnsl/libnsl2_1.3.0-2_arm64.deb
     digest: 08c95ea4d7177490751748ac26160236580dd2351a4e8ffdb57774e7874a40a7
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/n/nspr/libnspr4_4.35-1deepin1_arm64.deb
+    digest: e3aa76e8437c06d952593bdd442085be7f84ec4bc869f320301c6c83202c3c97
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/n/nss/libnss3_3.105-2_arm64.deb
+    digest: c032c24fbe815fa60d6e10de832a7d0a9af42f0a555b2b131e5babc123fcddae
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/n/numactl/libnuma1_2.0.14-3deepin1_arm64.deb
     digest: 975f33301315941ea6ff79bd2e9d561f4722cb27ea10138da991cf7c86b6fb8b
@@ -1072,6 +1118,24 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-base/libqt6openglwidgets6_6.8.0+dfsg-0deepin6_arm64.deb
     digest: 73c97b64ee7867d65359a0422b8509903c13a1a58e7389fc39b5a4f2fe86412d
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6pdf6_6.6.3-0deepin7_arm64.deb
+    digest: 74e0dc6a92bf84392eec74e72cc8e240126579744e5216ebfbb3eac62bca544f
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6pdfquick6_6.6.3-0deepin7_arm64.deb
+    digest: fd992c73bb8d90b736d9005ed5f96c6b0af7b47e324879bccad31c06c8c6ddf9
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6pdfwidgets6_6.6.3-0deepin7_arm64.deb
+    digest: 722f1c93e5a79955caffaf9df79f7195ac8c72107bace8dfbe0190ca9699a473
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-positioning/libqt6positioning6-plugins_6.8.0-0deepin_arm64.deb
+    digest: b1cd1815c930e9f1c3c6977466580b04c5b8332e67868d35f7457db4eb3ac8bf
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-positioning/libqt6positioning6_6.8.0-0deepin_arm64.deb
+    digest: 3c47ff71b55ce6eabb76d2312425a3d8ffd46de4554abcd3791c3665192c759d
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-positioning/libqt6positioningquick6_6.8.0-0deepin_arm64.deb
+    digest: 970ec4ece4b1196fdf28271b9ba598cb2f0e6a4a3ea4471e91f80c8a17367a19
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-base/libqt6printsupport6_6.8.0+dfsg-0deepin6_arm64.deb
     digest: 8d46dedea87833ae07a1e47d859772ccd0466f9156a06cefcf9cdb7546721429
   - kind: file
@@ -1110,6 +1174,9 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/libqt6quickwidgets6_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 9e46187cdd05eae2b1113623f827e080aa663da7919c1d87b44dbb03792b4dbf
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-serialport/libqt6serialport6_6.8.0-0deepin_arm64.deb
+    digest: ed5331345c81e5b45ba0985fcb9c95f9fee3941878151914da87bd1a78e69631
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-shadertools/libqt6shadertools6_6.8.0-0deepin1_arm64.deb
     digest: 6580d46c45a2b2a72aead40acfe67184e7e15149ca0737d0a594c11f750daf2c
@@ -1155,6 +1222,27 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-wayland/libqt6waylandcompositor6_6.8.0-0deepin4_arm64.deb
     digest: c0b78c06a4b0dd3a40aed8868318abda5d82a5a21c29b3126efb68d4f1063523
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webchannel/libqt6webchannel6_6.8.0-0deepin_arm64.deb
+    digest: d29c8c9c3b73987b352f5573d00794769ab1ebd57c12de7288f2b11d04cd7fa4
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webchannel/libqt6webchannelquick6_6.8.0-0deepin_arm64.deb
+    digest: daf9f42dcaa6aea03fab1624349e27156319b7d882d7217154f306bc826bc9e9
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6webengine6-data_6.6.3-0deepin7_arm64.deb
+    digest: 5ccfc319a0613923d08c4af8d2a2952079def1a1d2b15332adb9ee45f992c4de
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6webenginecore6-bin_6.6.3-0deepin7_arm64.deb
+    digest: 4b3c25c218f79fd55bad5bb55dbe0684c728b552e5c178983a976ad61508278f
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6webenginecore6_6.6.3-0deepin7_arm64.deb
+    digest: d1c311b5af9f29fa309d25e940750b93e6e75bf577106a316f9685e9d7970b4e
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6webenginequick6_6.6.3-0deepin7_arm64.deb
+    digest: 1e63f31a301259c2a7978d9e5b2188dd61f68dca4ce9e0853df3895e23eeae12
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/libqt6webenginewidgets6_6.6.3-0deepin7_arm64.deb
+    digest: fbc60b87f802b716b017916caa9b0d85a5f278aa5d6a2ebab20b82c6fdd0361d
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-base/libqt6widgets6_6.8.0+dfsg-0deepin6_arm64.deb
     digest: 5a230a38b8e1dd86bea7808bed5b73e644172a7cf7a04e0276262e9ca37ff35f
@@ -1228,8 +1316,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libs/libsm/libsm6_1.2.3-1_arm64.deb
     digest: 04dcd31830a75668f1114bff0dd08033af565b7f4f05cdb411d101ccff99d6e3
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libsmartcols1_2.39.3-6deepin1_arm64.deb
-    digest: 45c097e5720e7ba97ec63005aab9db05ad5e3ddae74b8d537660ac90c34ec145
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libsmartcols1_2.40.4-3deepin3_arm64.deb
+    digest: 6db8838314739fb1abea49a942b75df9bda3f69c8e5c34f44ef6a68c717e2cd9
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/snappy/libsnappy1v5_1.2.1-1_arm64.deb
     digest: c99a4ed8067e624491b4e6b0062688fe835b06c1db21a901e8a29926caec9d90
@@ -1261,14 +1349,14 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libs/libssh/libssh-gcrypt-4_0.10.6-2_arm64.deb
     digest: 830239bef63460fabeb07413177ff1377da7b67edb62fb4710ee06c764f232c0
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/o/openssl/libssl3_3.2.0-2deepin2_arm64.deb
-    digest: f7644a7984de1e0c7d867c5794537d7df6f0ee634850ed607a3098d3368cc163
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/o/openssl/libssl3_3.2.4-0deepin1_arm64.deb
+    digest: 91551d3d67e2ad04bc982b19c3c9b69da43bbd1ce0cceacbc98a3bbfe6e268e0
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/startup-notification/libstartup-notification0_0.12-deepin1_arm64.deb
     digest: 6afa3a2ae947564d05b220d89298c7e6e1f875cb05b4ed1a9a450be99a3ba47d
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-12/libstdc++6_12.3.0-17deepin10_arm64.deb
-    digest: 8494dbbb90f1fdb03c733412dea5e1bade8a6b59b53842f6a3d8c669dd759d78
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/g/gcc-13/libstdc++6_13.2.0-3deepin4_arm64.deb
+    digest: a4c67085eb06e81f133feb7cd9309cb5582edcc256cbfe3a2a534f37d1a09da5
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/s/svt-av1/libsvtav1enc1d1_1.7.0+dfsg-2_arm64.deb
     digest: cc104e0d2a339b388906430c5ddde52273cf42871c3d5a1c488732d17647e782
@@ -1348,8 +1436,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libu/libunwind/libunwind8_1.7.2-0deepin2_arm64.deb
     digest: 64d485461e0f091c1b8cb772bac0c551dc3a1a1543ea21bccd4d64bb0948cfae
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libuuid1_2.39.3-6deepin1_arm64.deb
-    digest: f085d875204b2c41158ad83c96da354d4ce53c724106857b861cca425170ed2f
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/libuuid1_2.40.4-3deepin3_arm64.deb
+    digest: 0015f725c4c05cbf917a8572b7f2a6314e9c1ee7c90b20e2d2060ddc9606c6da
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libv/libva/libva-drm2_2.20.0-2_arm64.deb
     digest: 9a61323993ee5414465bffd67342d3f96932516459f43434b16fb82bd75508b8
@@ -1549,6 +1637,9 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libx/libxkbcommon/libxkbcommon0_1.6.0-1_arm64.deb
     digest: f17db6332bf3598ce69a9e82ead1270c456976d1313365c0f4b2414a919338da
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/libx/libxkbfile/libxkbfile1_1.1.0-1_arm64.deb
+    digest: 2663ee314a5ff33e9e7bf8b4ef64acaf6b6b04182f46d9851bd11ab4b01be8ff
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libx/libxml2/libxml2_2.9.14+dfsg-1.3+rb2_arm64.deb
     digest: 821afd2170d402ff5a6f4cf852f27b329dd267a2a3d8ef10a0dd84c034ba83df
   - kind: file
@@ -1560,6 +1651,12 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/libx/libxshmfence/libxshmfence1_1.3-1_arm64.deb
     digest: 60d857474c350e734ae71d52d2f178bb094040eee606ad3b492e7bad7d105e35
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/libx/libxslt/libxslt1.1_1.1.34-4_arm64.deb
+    digest: a5d1e8c8687fb12a2cec6963d1031c38d5727ec92e41cf205a63997cabe1e747
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/libx/libxtst/libxtst6_1.2.3-1_arm64.deb
+    digest: b1fb01804966182f3db3150b8c4278a4188ee55b3d4794e0cfc96b6c0977e7b1
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/x/xvidcore/libxvidcore4_1.3.7-1_arm64.deb
     digest: 45d524b5413da4cd49fdd35e29065d3a88e0eba81e481d17c9a76880bc52b84d
@@ -1591,14 +1688,17 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/l/linux-upstream/linux-libc-dev_23.01.01.18_arm64.deb
     digest: 305736a76597755356ed54d9b5f36b935702c33ed1e17c8b401b4239e3ff10d2
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/s/shadow/login.defs_4.16.0-7deepin1_all.deb
+    digest: abed558f44fdd893df5020fdd787b2ee1b5cbc8b5e4b78ab4b01b8f1cc1aad08
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/l/lshw/lshw_02.19.git.2021.06.19.996aaad9c7-2deepin0_arm64.deb
     digest: 0e32f0eef7e7f5effe89929ad9a1c14a2838e5033fa9142cf0b3e6bcb81f8573
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mailcap/mailcap_3.70_all.deb
     digest: 7ca67d118c03eaf58346eb1e676ff16f4d1aa5252a8cc6b5b3b1ed44556180f1
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/m/make-dfsg/make_4.3-4.1_arm64.deb
-    digest: 5605fd4da45b98e233ed57ac481699a81a65c06194983be07892ff1a60be0c76
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/m/make-dfsg/make_4.4.1-1_arm64.deb
+    digest: fd601544bf60cf407d143282c4fb1296842e0cb583308339bde436df40c45b36
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mariadb/mariadb-common_10.11.6-1_all.deb
     digest: b1a1400182db347fb0b509da981c6ed7798e4d9ec473ce2be5dd25b30c6df473
@@ -1612,8 +1712,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mime-support/mime-support_3.66_all.deb
     digest: 20294deda4378616c2b48614ee226731ec09663c3497c35a467e8ea5fa03f16a
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/mount_2.39.3-6deepin1_arm64.deb
-    digest: c6f0b8d5d106b00a134b9927c63045da6cb5c6c219c9e442405068b912e3b0b1
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/mount_2.40.4-3deepin3_arm64.deb
+    digest: 95e926a52ce42b1502471976d27966f3e1f65e16c02d1e79d01a1ff88e8e1ce9
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/m/mysql-defaults/mysql-common_5.8+1.1.0_all.deb
     digest: 729d9b051d2dcda0d0bf51fee21d3b685093314a0b2283926f1eb11f937cb04c
@@ -1624,8 +1724,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/o/ocl-icd/ocl-icd-libopencl1_2.2.14-3_arm64.deb
     digest: 2411c1cc39eb107516938b83b1eb50c29e9a6deb232723d65e17cbf592df8609
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/s/shadow/passwd_4.14+dfsg1-0deepin4_arm64.deb
-    digest: 8beaef7b29607cc41c2e45a0888d3b91cee2a8e756ea0022ab5dcb8d0c5c3b36
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/s/shadow/passwd_4.16.0-7deepin1_arm64.deb
+    digest: 473c17140e962bbcf031ff7ffa3b33ecd9a6f357c48c8df5b75ff7bd2814514f
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/p/patch/patch_2.7.6-7_arm64.deb
     digest: d69d6e60753f09647125fa0991f7bda438f75c33708a9ca01dd6f1b6b87a3bd7
@@ -1729,8 +1829,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtqml_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 96f2f1d1953e3a48542911d7d13f179fc9e7766a462f5941a995f56455c9fc63
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/qml6-module-qtquick-controls2-styles-chameleon_6.0.27_arm64.deb
-    digest: c2f5542c56e91b96477a00bf9ffa284c859632e0df1290e59275d5b31266c87b
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/d/dtk6declarative/qml6-module-qtquick-controls2-styles-chameleon_6.0.29_arm64.deb
+    digest: 5e64535a93605a94b79f65337a729df0f2130eaf0acb84d20b4f1f3ab9b8f769
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtquick-controls_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 6ebce1670e7a4ac7a1a854e8d874cc6a52a1ff5fe2240e692ebbc0640ac94b5a
@@ -1752,6 +1852,9 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtquick-particles_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 3070d19efd57f6a3b50823cd5013c21725887d315da0ecf8e74ece35e8c314b2
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qml6-module-qtquick-pdf_6.6.3-0deepin7_arm64.deb
+    digest: 66fcad3b7ee51092cd0d08a42b27fbaeaaa13db80071e531e93b21149be8aa7e
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qml6-module-qtquick-shapes_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 0b4e44ed3ecddb764aa1c10864e03a5ff5ce734846d9c78ca2a83bafa11a88cc
@@ -1783,6 +1886,15 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-wayland/qml6-module-qtwayland-compositor_6.8.0-0deepin4_arm64.deb
     digest: fe1661e22cccbc3c09734e66eab7cdb6558ce527132b115cabd5bce805d7c2fc
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webchannel/qml6-module-qtwebchannel_6.8.0-0deepin_arm64.deb
+    digest: 05bd80a314f5741a72f0fab82a5331d172fc9cd4549032d4e792237dde3e0caa
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qml6-module-qtwebengine-controlsdelegates_6.6.3-0deepin7_arm64.deb
+    digest: 6e943558cd7c8d01cc77c63f45964ea7145eac358d731fe882d214dd7e6ea00e
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qml6-module-qtwebengine_6.6.3-0deepin7_arm64.deb
+    digest: 65958fbb67c62e12c04e8f31837e86e0810a277cb6eae2fd63dd12d2429b107c
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qmlscene-qt6_6.8.0+dfsg-0deepin3_arm64.deb
     digest: 6b1a40f112360867a6a026084d3890964dacf1712e0d00148bcebdcc0aecf7fc
   - kind: file
@@ -1813,6 +1925,9 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-base/qt6-gtk-platformtheme_6.8.0+dfsg-0deepin6_arm64.deb
     digest: 71e4b583fc8109c6cc0ffa7f42c9268af33127f4af1e1ae65dcaab6187647ee4
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qt6-image-formats-plugin-pdf_6.6.3-0deepin7_arm64.deb
+    digest: ddc4ac9b8e58d988fb2493c545686effa2c27ce0e247cd963d5495796be9df08
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-imageformats/qt6-image-formats-plugins_6.8.0-0deepin_arm64.deb
     digest: 4e4323c9a9a51342c64424187e92f7653a7aead8899f523561bc2bf8215ed513
   - kind: file
@@ -1821,6 +1936,12 @@ sources:
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-multimedia/qt6-multimedia-dev_6.8.0-0deepin_arm64.deb
     digest: d024d7f1dc80124397a3d4a41f4d2015cc72819d7933c0e5ac1cc2331b1ae548
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qt6-pdf-dev_6.6.3-0deepin7_arm64.deb
+    digest: 33faa5550f93c305f0e4ff11eb2469eaa4d09255797abc03344ea1917b50d5c5
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-positioning/qt6-positioning-dev_6.8.0-0deepin_arm64.deb
+    digest: ec43a1565965a9b18486681ecf11f4ef737e69cddb7bd2fd43880ece8748c98e
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-declarative/qt6-qmllint-plugins_6.8.0+dfsg-0deepin3_arm64.deb
     digest: f47370f34de61952736e23307d07de7959bd61028c1274f18c5c6f1f83f91b49
@@ -1870,6 +1991,18 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-wayland/qt6-wayland_6.8.0-0deepin4_arm64.deb
     digest: 5a001776ab3e8bc25752a75b7b8a600dd3e7048c63f6ca96a0f8993ceca26d7b
   - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webchannel/qt6-webchannel-dev_6.8.0-0deepin_arm64.deb
+    digest: c262e9c28d7e46be2e82ddce26469e02e810d86d8c9a2861a7edc95385e7ba7c
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qt6-webengine-dev-tools_6.6.3-0deepin7_arm64.deb
+    digest: 6b8b1c8b469be854714e68e76417cae7e3068518260d772eddbc26869f2bd2ac
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qt6-webengine-dev_6.6.3-0deepin7_arm64.deb
+    digest: 8226613ac2d41d49b04608e451d22dd8739375a4ef894778aee49be62465692b
+  - kind: file
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-webengine/qt6-webengine-private-dev_6.6.3-0deepin7_arm64.deb
+    digest: 1f307c021f996d843c4bff366c4d6547198095b055315f151a21e90a22e5bee9
+  - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/q/qt6-base/qt6-xdgdesktopportal-platformtheme_6.8.0+dfsg-0deepin6_arm64.deb
     digest: a9c0e6b7205d258a6954455714f04b3634802b8ad76b30f4d135011f978eb031
   - kind: file
@@ -1900,8 +2033,8 @@ sources:
     url: http://10.20.64.92:8080/testing25_daily//pool/main/u/usrmerge/usrmerge_38_all.deb
     digest: fdc636985788b18a04cd15941a111fb2a73d3b56cf58c689b918345e6f003161
   - kind: file
-    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/uuid-dev_2.39.3-6deepin1_arm64.deb
-    digest: 7094c9e4b23c9651ba3bb49b5c13883ff2bcd12cd4f30d291a2c29cc4fd34d52
+    url: http://10.20.64.92:8080/testing25_daily//pool/main/u/util-linux/uuid-dev_2.40.4-3deepin3_arm64.deb
+    digest: cf689b83b763f787cd1230760a5dc5b3eb24f58c23552291d11030a753253801
   - kind: file
     url: http://10.20.64.92:8080/testing25_daily//pool/main/x/xorg/x11-common_7.7+23-deepin1_all.deb
     digest: 9a7643db11023a8bec126312edec4b1b7357b93416bdfbaf9b0cb8bc04506d49
